@@ -1,0 +1,8 @@
+	MOV A, 231
+	MOV C, 47
+.loop:
+	MOV [A], C
+	INC A
+	INC C
+	CMP C, 58
+	JNZ .loop
